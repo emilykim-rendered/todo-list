@@ -70,6 +70,7 @@ Now find the code that implements the **Mark a todo item as done** user story.
 While investigating that code, answer:
 
 - What Java type represents a todo item?
+   string
 - How is a todo item's completion status represented?
 - How can the program tell whether a todo item is completed when it saves the data?
 - What do you think of this current representation?
@@ -106,10 +107,12 @@ To get started, perform a **noun–verb analysis** of the specification as a tea
 1. Identify the important **nouns**.
    - Which are candidate classes?
    - Which are better represented as attributes (instance variables) of another class?
+   - Title, description, due date, priority level -> tasks
 
 2. Identify the important **verb phrases**.
    - What responsibilities do they suggest?
    - Which of your candidate classes should be responsible for each one?
+   - filter, add, edit, delete, mark as complete, save
 
 > Remember, not *every* noun and verb should necessarily become a class or method
 > in our design.
